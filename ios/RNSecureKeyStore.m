@@ -107,7 +107,7 @@ static NSString *serviceName = @"RNSecureKeyStoreKeyChain";
 - (void)handleAppUninstallation
 {
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"RnSksIsAppInstalled"]) {
-        [self clearSecureKeyStore];
+        //[self clearSecureKeyStore];
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"RnSksIsAppInstalled"];
         [[NSUserDefaults standardUserDefaults] synchronize];
     }
